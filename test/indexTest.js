@@ -29,20 +29,8 @@ describe( "Triangle", () => {
     expect( Triangle ).to.exist
   } )
 
-  it( "checks for valid triangle", () => {
-    triangle = new Triangle( [ 5, 5, 5 ] )
-    triangle2 = new Triangle( [ 15, 10, 1 ] )
-
-    expect( triangle.countSides ).to.eq( 3 )
-
-    expect( triangle.isValid ).to.be.true
-    expect( triangle2.isValid ).to.be.false
-  } )
-
-  it( "has a perimeter getter inherited from Polygon", () => {
-    expect( triangle.perimeter ).to.eq( 15 )
-    expect( triangle2.perimeter ).to.eq( 26 )
-  } )
+  
+  
 } )
 
 
@@ -63,12 +51,5 @@ describe( "Square", () => {
     expect( square.area ).to.eq( 25 )
   } )
 
-  it( "checks for valid square", () => {
-    let square = new Square( [ 5, 5, 5, 5 ] )
-    let square2 = new Square( [ 5, 4, 3, 2 ] )
-
-    expect( square.countSides ).to.eq( 4 )
-    expect( square.isValid ).to.be.true
-    expect( square2.isValid ).to.be.false
-  } )
+ 
 } )
